@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Money</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- heading title -->
+    <header>
+        <h1 class="text-5xl text-center my-10">Wallet <span class="text-green-500	">Money</span></h1>
+    </header>    
+    <main>
+        <!-- main section -->
+        <!-- using grid system -->
+        <section class="container mx-auto mt-10 px-2 grid grid-cols-1 lg:grid-cols-2 "> 
+            <div class="mx-10 my-5">
+                <img class="h-full" src="images/money.jpg" alt="">
+            </div>
+            <div class="mx-10 md:my-0 my-5 bg-gray-100 text-center p-5 align-middle">
+                <h3 class="text-3xl font-medium mb-6">Income</h3>
+                <p class="my-6">Income:  <input class="ml-5" type="number" name="" id="income-input"></p>
+                <h3 class="text-3xl font-medium mb-6">Expenses</h3>
+                <p class="my-6">Food:  <input class="ml-5" type="number" name="" id="food-input"></p>
+                <p class="my-6">Rent:  <input class="ml-5" type="number" name="" id="rent-input"></p>
+                <p class="my-6">Clothes:  <input class="ml-5" type="number" name="" id="clothes-input"></p>
+                <button id="calculate-btn" class="bg-cyan-400 my-3 px-10 py-4 text-2xl text-white font-bold rounded-lg">Calculate</button>
+                <h3 class="text-3xl font-medium mb-6">Total Expense: $<span id="total-expense"></span></h3>
+                <h3 class="text-3xl font-medium mb-6">Balance: $<span id="balance"></span></h3>
+                <p class="my-6">Save: <input class="my-2" type="number" name="" id="saving-input"> % <button id="save-btn" class="bg-cyan-400 mx-3 px-6 py-2 text-white font-bold rounded-lg">Save</button></p>
+                <h3 class="text-3xl font-medium mb-6">Saving Amount: $<span id="saving"></span></h3>
+                <h3 class="text-3xl font-medium mb-2">Remainining Balance: $<span id="remaining-balance"></span></h3>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- javascript link -->
+    <script src="js/manage.js"></script>
+</body>
+</html>
